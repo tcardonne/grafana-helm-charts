@@ -481,10 +481,10 @@ initChownData:
     seccompProfile:
       type: RuntimeDefault
     capabilities:
-      add:
-        - CHOWN
       drop:
         - ALL
+      add:
+        - CHOWN
 
 # Administrator credentials when not using an existing secret (see below)
 adminUser: admin
